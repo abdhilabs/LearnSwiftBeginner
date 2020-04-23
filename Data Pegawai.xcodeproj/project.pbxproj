@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F00F1DA244ED98D00172AEA /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F00F1D9244ED98D00172AEA /* TableViewCell.swift */; };
 		1F8F102C244EA10F000871C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8F102B244EA10F000871C5 /* AppDelegate.swift */; };
 		1F8F102E244EA10F000871C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8F102D244EA10F000871C5 /* SceneDelegate.swift */; };
 		1F8F1030244EA10F000871C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8F102F244EA10F000871C5 /* ViewController.swift */; };
@@ -14,9 +15,12 @@
 		1F8F1036244EA10F000871C5 /* Data_Pegawai.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1F8F1034244EA10F000871C5 /* Data_Pegawai.xcdatamodeld */; };
 		1F8F1038244EA112000871C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F8F1037244EA112000871C5 /* Assets.xcassets */; };
 		1F8F103B244EA112000871C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F8F1039244EA112000871C5 /* LaunchScreen.storyboard */; };
+		1F8F1048244EA7D9000871C5 /* AddFormEmployeesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8F1047244EA7D9000871C5 /* AddFormEmployeesController.swift */; };
+		1F919B0D2451460B001750E6 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F919B0C2451460B001750E6 /* DetailController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F00F1D9244ED98D00172AEA /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		1F8F1028244EA10F000871C5 /* Data Pegawai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Data Pegawai.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F8F102B244EA10F000871C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F8F102D244EA10F000871C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +30,8 @@
 		1F8F1037244EA112000871C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F8F103A244EA112000871C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F8F103C244EA112000871C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F8F1047244EA7D9000871C5 /* AddFormEmployeesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFormEmployeesController.swift; sourceTree = "<group>"; };
+		1F919B0C2451460B001750E6 /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +64,43 @@
 		1F8F102A244EA10F000871C5 /* Data Pegawai */ = {
 			isa = PBXGroup;
 			children = (
-				1F8F102B244EA10F000871C5 /* AppDelegate.swift */,
-				1F8F102D244EA10F000871C5 /* SceneDelegate.swift */,
-				1F8F102F244EA10F000871C5 /* ViewController.swift */,
-				1F8F1031244EA10F000871C5 /* Main.storyboard */,
+				1F8F1044244EA73C000871C5 /* View */,
+				1F8F1043244EA72E000871C5 /* Controller */,
+				1F8F1042244EA71F000871C5 /* Base */,
 				1F8F1037244EA112000871C5 /* Assets.xcassets */,
-				1F8F1039244EA112000871C5 /* LaunchScreen.storyboard */,
 				1F8F103C244EA112000871C5 /* Info.plist */,
 				1F8F1034244EA10F000871C5 /* Data_Pegawai.xcdatamodeld */,
 			);
 			path = "Data Pegawai";
+			sourceTree = "<group>";
+		};
+		1F8F1042244EA71F000871C5 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				1F8F102B244EA10F000871C5 /* AppDelegate.swift */,
+				1F8F102D244EA10F000871C5 /* SceneDelegate.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		1F8F1043244EA72E000871C5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1F8F102F244EA10F000871C5 /* ViewController.swift */,
+				1F8F1047244EA7D9000871C5 /* AddFormEmployeesController.swift */,
+				1F919B0C2451460B001750E6 /* DetailController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1F8F1044244EA73C000871C5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1F8F1031244EA10F000871C5 /* Main.storyboard */,
+				1F8F1039244EA112000871C5 /* LaunchScreen.storyboard */,
+				1F00F1D9244ED98D00172AEA /* TableViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,7 +175,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F8F1036244EA10F000871C5 /* Data_Pegawai.xcdatamodeld in Sources */,
+				1F919B0D2451460B001750E6 /* DetailController.swift in Sources */,
 				1F8F1030244EA10F000871C5 /* ViewController.swift in Sources */,
+				1F8F1048244EA7D9000871C5 /* AddFormEmployeesController.swift in Sources */,
+				1F00F1DA244ED98D00172AEA /* TableViewCell.swift in Sources */,
 				1F8F102C244EA10F000871C5 /* AppDelegate.swift in Sources */,
 				1F8F102E244EA10F000871C5 /* SceneDelegate.swift in Sources */,
 			);
